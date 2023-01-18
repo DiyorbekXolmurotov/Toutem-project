@@ -1,0 +1,318 @@
+.Bestsellers .container {
+    display: flex;
+    // z-index: -1;
+    // position: relative;
+    margin-bottom: 0px;
+    max-width: $desktop-1;
+    max-height: 600px;
+}
+
+.jamlanma {
+    display: flex;
+}
+
+.hero__inners {
+    position: relative;
+    width: 1781px;
+    height: 1231px;
+    display: flex;
+    max-width: 375px;
+    max-height: 650px;
+    margin-top: 20px;
+}
+
+.hero__inner-feys {
+    position: relative;
+    width: 1781px;
+    height: 1231px;
+    display: flex;
+    max-width: 375px;
+    max-height: 375px;
+    margin-top: 20px;
+}
+
+.hero_jamps {
+    background-repeat: no-repeat;
+    background-image: url(/images/png/Vector.png);
+}
+
+.ul__link {
+    cursor: pointer;
+}
+
+.hero_jampsd {
+    background-repeat: no-repeat;
+    background-image: url(/images/png/Vector\ \(1\).png);
+}
+
+.hero__headingb {
+    font-family: 'SF Pro Rounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 107.9%;
+    color: $color-green;
+    width: 523px;
+    height: 57px;
+    max-width: 600px;
+    margin: 180px 0px 20px 100px;
+}
+
+.borser_feys {
+    margin-top: 290px;
+    position: absolute;
+    width: 375px;
+    height: 91px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12.5px);
+    border-radius: 0px 20px;
+    .yam {
+        position: absolute;
+        display: flex;
+    .borser_h4 {
+        margin: 0px 20px;
+        width: 175px;
+        height: 28px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        color: $color-kul2;
+    }
+    .borser_h4d {
+        margin: 0px 20px;
+        width: 138px;
+        height: 28px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        color: #1F2937;
+    }
+
+    .borser_span {
+        margin-top: 10px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 97.9%;
+        text-align: center;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: $color-oq;
+        background: $color-green;
+        border-radius: 8px;
+        width: 32px;
+        height: 15px;
+        padding: 3px;
+    }
+}
+
+.borser_jamp {
+    margin: 20px;
+    position: absolute;
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+    .borser_p {
+        width: 239px;
+        height: 40px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: $color-kul;
+    }
+}
+}
+
+.ul__list {
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 970px;
+    gap: 15px;
+    display: flex;
+    white-space: nowrap;
+
+    .ul__item {
+
+        .ul__link {
+            background: $color-kul;
+            width: 8px;
+            height: 8px;
+            border-radius: 10px;
+            &:hover {
+                background: $color-green; 
+            }
+
+            &--active {
+                color: $color-green;
+            }
+        }
+    }
+}
+
+.ul__lists {
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 970px;
+    gap: 15px;
+    display: flex;
+    // white-space: nowrap;
+
+    .ul__item {
+
+        .ul__link {
+            background: $color-kul;
+            width: 8px;
+            height: 8px;
+            border-radius: 10px;
+            &:hover {
+                background: $color-green; 
+            }
+
+            &--active {
+                color: $color-green;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 1150px) {
+    .hero__inners {
+        background-position: right -830px bottom -170px;
+    }
+}
+
+@media only screen and(max-width:1050px) {
+    .hero .container {
+        margin-bottom: 200px;
+    }
+}
+
+@media only screen and(max-width: $tablet) {
+    .Bestsellers .container {
+        max-width: $tablet;
+        flex-direction: column;
+
+        .hero_jamps {
+            background-image: none;
+            background-image: url(/images/png/Vector\ \(1\).svg);
+            background-repeat: no-repeat;
+        }
+
+        .hero__inners {
+            max-width: 375px;
+            max-height: 386px;
+            margin-left: 150px;
+        }
+
+        .hero__inner-feys {
+            margin-left: 150px;
+        }
+
+        .ul__lists {
+            position: absolute;
+            margin-top: 1330px;
+            margin-left: 290px;
+            gap: 15px;
+            display: flex;
+            white-space: nowrap;
+        }
+
+        .hero__inners {
+           justify-content: center;
+        }
+
+        .hero__inner-feys {
+            justify-content: center;
+        }
+
+       
+        .hero__headingb {
+            margin-left: 225px;
+        }
+
+        .button__b {
+            margin-left: 200px;
+            margin-bottom: 200px;
+        }
+    
+        .hero__text {
+            max-width: 398px;
+            margin-bottom: 40px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        .jamlanma {
+            background-image: url(/images/png/Vector\ \(2\).png);
+            background-repeat: no-repeat;
+            flex-direction: column;
+
+            .hero_jampsd {
+                background-image: none;
+            }
+
+            .ul__list {
+                margin-left: 300px;
+                margin-top: 1330px;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: $mobile) {
+    .Bestsellers .container {
+        max-width: $mobile;
+        margin-bottom: 300px;
+        // margin-top: 300px;
+
+        .hero_jamps {
+            margin-top: 0px;
+            margin-left: 20px;
+            .hero__headingb {
+                margin-left: 50px;
+            }
+
+            .button__b {
+                margin-left: 30px;
+            }
+        }
+
+        .hero__inners {
+            margin-left: 10px;
+            margin-top: 300px;
+        }
+
+        .hero__inner-feys {
+            margin-left: 10px;
+        }
+
+        .ul__lists {
+            margin-top: 1600px;
+            margin-left: 150px;
+        }
+
+        .jamlanma {
+            .ul__list {
+                margin-top: 1600px;
+                margin-left: 150px;
+            }
+        .hero_jampsd {
+            .hero__headingb {
+                margin-left: 110px;
+            }
+
+            .button__b {
+                margin-left: 50px;
+            }
+        }
+        }
+    }
+    
+}

@@ -1,0 +1,116 @@
+.Toutem__inner {
+    // position: relative;
+    // z-index: -1;
+    @media (max-width: $tablet) {
+        transform: translateX(120px);
+    }
+
+    @media (max-width: $mobile) {
+        transform: translateX(150px,100px);
+    }
+}
+
+.Toutem__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin-top: 250px;
+    margin-left: 100px;
+
+    @media (max-width: $mobile) {
+        margin-left: 0;
+        margin-bottom: 30px;
+        // margin-right: 800px;
+    }
+
+    li {
+        
+        @media (max-width: $tablet) {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: $mobile) {
+            margin-bottom: 0;
+            margin-bottom: 25px;
+        }
+    }
+
+    @media (max-width:$tablet) {
+        flex-direction: column;
+    }
+    
+    
+    a {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #F9FAFB;
+        width: 274px;
+        height: 274px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 0px 20px;
+        color: #5FD788;
+        transition: 0.5s ease;
+        text-align: center;
+        justify-content: center;
+        padding-top: 60px;
+
+        
+
+        
+        @media (max-width: $mobile) {
+            svg {
+                // display: none;
+                width: 49px;
+                height: 50px;
+            }
+
+            transform: translateY(-50px);
+
+            &::before {
+                content: url(/img/essential.svg);
+                transform: translate(-25px,-25px);
+                // position: absolute;
+            }
+                
+        }
+
+        @media (max-width: $mobile) {
+            width: 122px;
+            height: 122px;
+            padding-top: 30px;
+        }
+
+        &:hover {
+            background-color: #5FD788;
+            color: white;
+        }
+
+        p {
+            display: block;
+
+            @media (max-width:$mobile) {
+                // padding-top: 10px;
+                width: 122px;
+                height: 8px;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 140%;
+                text-align: center;
+                color: #5FD788;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    a {
+        padding-top: 0px;
+    }
+}
+
+.trends {
+    margin-top: 300px;
+}

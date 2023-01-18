@@ -1,0 +1,115 @@
+@mixin flexBox {
+    display: flex;
+    gap: 20px;
+  }
+  
+  @mixin headings($heading) {
+    @if $heading == h2 {
+      font-size: 22px;
+      color: green;
+      background-color: white;
+    } @else if $heading == h3 {
+      font-size: 20px;
+      color: yellow;
+      background-color: #000;
+    } @else if $heading == h4 {
+      font-size: 20px;
+      color: red;
+      background-color: beige;
+    } @else if $heading == h5 {
+      font-size: 20px;
+      color: blue;
+      background-color: yellowgreen;
+    } @else {
+      font-size: 20px;
+      color: blueviolet;
+      background-color: aquamarine;
+    }
+  }
+  @mixin headings-2 {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 72px;
+    margin: 0;
+  }
+  @mixin paragraf {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+  }
+
+@mixin font {
+    font-family: "Mulish";
+    font-style: normal;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin Ffont {
+  font-family: 'Fraunces 9pt';
+  font-style: normal;
+}
+
+@mixin Bfont {
+  font-family: 'Barlow';
+  font-style: normal;
+}
+
+@mixin center {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+@mixin font {
+  font-family:"Mulish";
+  font-style: normal;
+}
+
+@mixin center2 {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+@mixin li {
+  list-style-type: none;
+}
+
+@mixin hover {
+  opacity: 1;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin mix-blend {
+  mix-blend-mode: normal;
+}
+
+@mixin display {
+  display: flex;
+}
+
+@mixin column {
+  flex-direction: column;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

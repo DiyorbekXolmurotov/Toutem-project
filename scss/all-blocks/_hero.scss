@@ -1,0 +1,173 @@
+.hero .container {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    max-width: $desktop-1;
+    max-height: 802px;
+}
+
+.hero_jamp {
+    margin-top: 50px;
+}
+
+.hero__inner {
+    padding: 150px 20px;
+    background-repeat: no-repeat;
+    background-image: url("/images/png/Ellipse\ 1.png");
+    width: 1781px;
+    height: 1231px;
+    background-position: right -1%;
+}
+
+.hero__heading {
+    font-family: 'SF Pro Rounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 89.84%;
+    color: $color-green;
+    width: 523px;
+    height: 164px;
+    margin: 200px 0px 20px;
+    max-width: 600px;
+}
+
+.hero__text {
+    width: 374px;
+    height: 62px;
+    opacity: 0.8;
+}
+
+@media only screen and(max-width: $tablet) {
+    .hero .container {
+        max-width: $tablet;
+        margin-bottom: 0;
+        .hero__heading {
+            font-family: 'SF Pro Rounded';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 80px;
+            line-height: 89.84%;
+            color: $color-green;
+            margin: 200px 0px 0px;
+            width: 420px;
+            margin-left: 0;
+            height: 164px;
+        }
+
+        .hero__text {
+            width: 374px;
+            height: 62px;
+            margin-right: 0;
+        }
+
+        .hero__inner {
+            height: 674px;
+            width: 465px;
+            padding: 100px 50px;
+            background-image: url(/images/png/Ellipse\ 1\ \(1\).png);
+            background-repeat: no-repeat;
+            background-position: left -1px;
+    
+            img {
+                width: 290px;
+                height: 196px;
+                padding-right: 50px;
+                margin-top: 150px;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 525px) {
+    .hero .container {
+        max-width: 525px;
+    .hero__inner {
+        position: relative;
+        padding: 100px 24px;
+        z-index: -1;
+
+        &::after {
+            position: none;
+            content: "";
+            display: none;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            background-color: none;
+            border-radius: none;
+        }
+    }
+}
+
+    .hero__heading {
+        margin: 0 auto;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .hero__text {
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .hero__link {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and(max-width: $mobile) {
+    .hero .container {
+        max-width: $mobile;
+    .hero__inner {
+        width: 270px;
+        height: 270px;
+        top: 25px;
+        right: 250px;
+        padding: 50px 50px 0px 50px;
+        background-image: url(/images/png/Ellipse\ 1\ \(2\).png);
+        background-repeat: no-repeat;
+
+        img {
+            align-items: center;
+            justify-content: center;
+            margin-top: 0px;
+            padding: 0px 0px;
+            width: 123px;
+            height: 83px;
+        }
+    }
+
+    .hero_jamp {
+        .hero__heading {
+            font-family: 'SF Pro Rounded';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 89.84%;
+            text-align: center;
+            color: $color-green;
+            width: 300px;
+            height: 100px;
+        }
+        margin-top: 30px;
+        width: 375px;
+        height: 164px;
+
+        .hero__text {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 140%;
+            text-align: center;
+            color: $color-kul;
+            width: 311px;
+            height: 45px;
+        }
+    }
+    }
+}

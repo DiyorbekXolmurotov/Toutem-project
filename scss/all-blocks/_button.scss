@@ -1,0 +1,80 @@
+.button__b {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #5FD788;
+    border-radius: 8px;
+    padding: 8px;
+    width: 274px;
+    height: 40px;
+    color: $light-cream;
+    border: none;
+    margin-left: 100px;
+    transition: background-color $transition;
+
+    &:hover{
+        background-color: #66D2CF;
+    }
+
+    &:active{
+        background-color: #E2DEDB;
+    }
+
+    &:focus {
+        background-color: blue;
+    }
+}
+
+.button__a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #5FD788;
+    border-radius: 8px;
+    padding: 8px;
+    width: 274px;
+    height: 40px;
+    color: $light-cream;
+    border: none;
+    margin-left: 250px;
+    transition: background-color $transition;
+
+    &:hover{
+        background-color: #66D2CF;
+    }
+
+    &:active{
+        background-color: #E2DEDB;
+    }
+
+    &:focus {
+        background-color: blue;
+    }
+}
+
+.button__d {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px;
+    width: 274px;
+    height: 40px;
+    color: #5FD788;
+    border: none;
+    margin-left: 100px;
+    transition: background-color $transition;
+
+    &:hover{
+        background-color: #66D2CF;
+    }
+
+    &:active{
+        background-color: #E2DEDB;
+    }
+
+    &:focus {
+        background-color: blue;
+    }
+}

@@ -1,0 +1,120 @@
+.Blog .container {
+    margin-bottom: 0px;
+    max-width: $desktop-1;
+    max-height: 600px;
+}
+
+hr {
+    width: 325px;
+}
+
+.hero__headingbd {
+    margin: 0px 630px;
+    font-family: 'SF Pro Rounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 107.9%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #5FD788;
+}
+
+.nav__listd {
+    display: flex;
+    margin: 30px 100px;
+    gap: 30px;
+
+    .nav__itemd {
+
+        .borser_feysd {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 371px;
+            height: 200px;
+
+            .nav_h3 {
+                margin: 0px 20px 40px 20px;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 140%;
+                color: #5FD788;
+            }
+
+            .nav_p {
+                margin: 0px 20px;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                color: #4B5563;
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .Blog .container {
+        max-width: $tablet;
+        margin-top: 850px;
+        margin-bottom: 900px;
+        .nav__listd {
+            margin-left: 150px;
+            flex-direction: column;
+            gap: 260px;
+        }
+        .hero__headingbd {
+            width: 150px;
+            // margin-bottom: 100px;
+            // margin-left: 260px;
+            margin: 0px 0px 100px 250px;
+        }
+
+        .nav__itemd {
+            width: 371px;
+            height: 344px;
+            border-radius: 10px;
+            // margin-bottom: 100px;
+            background-image: url(/images/png/IMG\ \(1\).png);
+            background-repeat: no-repeat;
+            img {
+               width: 0;
+               height: 0;
+            }
+        }
+
+        .nav_h3 {
+            width: 250px;
+        }
+
+        .borser_feysd {
+            margin-top: 300px;
+            height: 250px;
+        }
+
+        hr {
+            width: 325px;
+            height: 1px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .Blog .container {
+        max-width: $mobile;
+        margin-top: 1200px;
+
+        .hero__headingbd {
+            margin-left: 120px;
+        }
+
+        .nav__listd {
+            margin-left: 0;
+        }
+    }
+}

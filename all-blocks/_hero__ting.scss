@@ -1,0 +1,157 @@
+.hero__ting .container {
+    display: flex;
+    margin-bottom: 0px;
+    max-width: $desktop-1;
+    max-height: 887px;
+    flex-direction: row-reverse;
+}
+
+.hero_jampe {
+    margin-top: 300px;
+    width: 573px;
+    height: 300px;
+}
+
+.hero__img {
+    padding: 120px 50px;
+    background-image: url("/images/png/Blob.png");
+    background-repeat: no-repeat;
+    width: 1781px;
+    height: 1741px;
+    background-position: left 50px;
+}
+
+.hero__headings {
+    font-family: 'SF Pro Rounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 107.9%;
+    letter-spacing: 0.01em;
+    color: #5FD788;
+    width: 573px;
+    height: 103px;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+.hero__texts {
+    margin-bottom: 25px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: right;
+    margin-left: 150px;
+    width: 374px;
+    height: 62px;
+    color: $color-kul;
+}
+
+@media only screen and(max-width: 1150px) {
+    .hero__inner {
+        background-position: right -830px bottom -170px;
+    }
+}
+
+@media only screen and(max-width:1050px) {
+    .hero .container {
+        margin-bottom: 200px;
+    }
+}
+
+@media only screen and(max-width: $tablet) {
+    .hero__ting .container {
+        max-width: $tablet;
+        margin-bottom: 100px;
+        .hero__img {
+            background-image: url("/images/png/Blob.png");
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 520px;
+            background-position: left -100px top -50px;
+    
+            img {
+                width: 402px;
+                height: 356px;
+                margin-right: 0;
+            }
+        }
+        
+        .hero_jampe {
+            margin-top: 200px;
+        }
+    
+        .hero__img {
+            margin-left: 500px;
+        }
+    
+        .hero__headings {
+            width: 573px;
+            height: 88px;
+        }
+    
+        .hero__text {
+            max-width: 398px;
+            margin-bottom: 40px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media only screen and(max-width: $mobile) {
+    .hero__ting .container {
+        max-width: $mobile;
+        flex-direction: column-reverse;
+
+        .hero__img {
+            background-image: url(/images/png/Blob\ \(1\).png);
+            background-repeat: no-repeat;
+            margin-left: 80px;
+            background-position: left -1px;
+            padding: 0px 0px 0px 10px;
+            height: 200px;
+            img {
+                width: 155px;
+                height: 137px;
+                margin-left: 0;
+            }
+        }
+
+        .hero_jampe {
+            margin-top: 50px;
+            .hero__headings {
+                font-family: 'SF Pro Rounded';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 107.9%;
+                text-align: center;
+                letter-spacing: 0.01em;
+                color: $color-green;
+                width: 375px;
+                height: 88px;
+                margin: 0px 0px 0px;
+            }
+
+            p {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 140%;
+                text-align: center;
+                color: #9CA3AF;
+                width: 263px;
+                height: 103px;
+                margin: 0px 0px 25px 45px;
+            }
+
+            .button__a {
+                margin-left: 50px;
+            }
+        }
+    }
+}
